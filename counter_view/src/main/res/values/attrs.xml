@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CounterView">
+        <attr name="timeInterval" format="integer" />
+        <attr name="increment" format="float" />
+        <attr name="startValue" format="float" />
+        <attr name="endValue" format="float" />
+        <attr name="autoStart" format="boolean" />
+    </declare-styleable>
+</resources>
