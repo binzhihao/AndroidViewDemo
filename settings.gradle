@@ -1,1 +1,1 @@
-include ':app', ':counter_view'
+include ':app', ':counter_view', ':pw_edit'

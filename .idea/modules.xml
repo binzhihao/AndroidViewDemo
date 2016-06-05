@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/AndroidViewDemo.iml" filepath="$PROJECT_DIR$/AndroidViewDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/counter_view/counter_view.iml" filepath="$PROJECT_DIR$/counter_view/counter_view.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pw_edit/pwedit.iml" filepath="$PROJECT_DIR$/pw_edit/pwedit.iml" />
     </modules>
   </component>
 </project>

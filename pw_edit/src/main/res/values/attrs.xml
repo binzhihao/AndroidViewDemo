@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PwEditText">
+        <attr name="toggleMode" format="boolean"/>
+        <attr name="drawable_hide" format="integer" />
+        <attr name="drawable_show" format="integer" />
+        <attr name="drawable_delete" format="integer" />
+    </declare-styleable>
+</resources>
