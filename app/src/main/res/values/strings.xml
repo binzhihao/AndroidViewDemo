@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">ViewDemo</string>
+    <string name="navigation_view">View</string>
+    <string name="navigation_animation">Animation</string>
+    <string name="drawer_open_description">open</string>
+    <string name="drawer_close_description">close</string>
+    <string name="fragment_1">TextView</string>
+    <string name="fragment_2">EditText</string>
 </resources>
