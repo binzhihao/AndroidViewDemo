@@ -11,13 +11,12 @@
     <style name="TabLayoutStyle" parent="Widget.Design.TabLayout">
         <item name="android:background">@color/colorWhite</item>
         <item name="tabMode">scrollable</item>
-        <item name="tabSelectedTextColor">@color/colorAccent</item>
-        <item name="tabIndicatorColor">@color/colorAccent</item>
         <item name="tabTextAppearance">@style/TabStyle</item>
     </style>
 
     <style name="TabStyle" parent="TextAppearance.Design.Tab">
         <item name="textAllCaps">false</item>
+        <item name="android:textSize">10sp</item>
     </style>
 
 </resources>

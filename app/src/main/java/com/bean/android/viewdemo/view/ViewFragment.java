@@ -5,6 +5,7 @@ import android.support.annotation.Nullable;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -25,15 +26,20 @@ public class ViewFragment extends Fragment{
         mTablayout = (TabLayout) view.findViewById(R.id.tab_layout);
         mViewPager = (ViewPager) view.findViewById(R.id.viewpager);
 
-        MyFragmentPagerAdapter adapter = new MyFragmentPagerAdapter(getChildFragmentManager());
-        adapter.addFragment(new TextViewFragment(), getString(R.string.fragment_1));
-        adapter.addFragment(new EditTextFragment(), getString(R.string.fragment_2));
+        MyFragmentPagerAdapter adapter = new MyFragmentPagerAdapter(getChildFragmentManager(),inflater);
+        adapter.addFragment(new TextViewFragment(), getString(R.string.fragment_1),R.drawable.tab_icon1);
+        adapter.addFragment(new EditTextFragment(), getString(R.string.fragment_2),R.drawable.tab_icon2);
         mViewPager.setAdapter(adapter);
         mViewPager.setOffscreenPageLimit(3);
-
-        mTablayout.addTab(mTablayout.newTab().setText(R.string.fragment_1));
-        mTablayout.addTab(mTablayout.newTab().setText(R.string.fragment_2));
-        mTablayout.setupWithViewPager(mViewPager);  // 将两者关联起来
+        mTablayout.setupWithViewPager(mViewPager);  // 将两者关联起来，必须在setAdapter之后调用
+        //自定义Tab的样式
+        for(int i=mTablayout.getTabCount()-1;i>=0;i--){
+            //set icon only
+            //mTablayout.getTabAt(i).setIcon(R.drawable.tab_icon1);
+            //set custom view
+            mTablayout.getTabAt(i).setCustomView(adapter.getTabView(i));
+        }
+        mTablayout.getTabAt(0).getCustomView().setSelected(true);//初始化时候选中第一个标签，否则图标状态不匹配
 
         return view;
     }
