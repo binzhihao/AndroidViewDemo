@@ -27,13 +27,14 @@ public class ViewFragment extends Fragment{
         mViewPager = (ViewPager) view.findViewById(R.id.viewpager);
 
         MyFragmentPagerAdapter adapter = new MyFragmentPagerAdapter(getChildFragmentManager(),inflater);
-        adapter.addFragment(new TextViewFragment(), getString(R.string.fragment_1),R.drawable.tab_icon1);
-        adapter.addFragment(new EditTextFragment(), getString(R.string.fragment_2),R.drawable.tab_icon2);
+        adapter.addFragment(new TextViewFragment(), getString(R.string.fragment_1),R.drawable.tab_icon);
+        adapter.addFragment(new EditTextFragment(), getString(R.string.fragment_2),R.drawable.tab_icon);
+        adapter.addFragment(new ViewGroupFragment(),getString(R.string.fragment_3),R.drawable.tab_icon);
         mViewPager.setAdapter(adapter);
         mViewPager.setOffscreenPageLimit(3);
         mTablayout.setupWithViewPager(mViewPager);  // 将两者关联起来，必须在setAdapter之后调用
         //自定义Tab的样式
-        for(int i=mTablayout.getTabCount()-1;i>=0;i--){
+        for(int i=0;i<mTablayout.getTabCount();++i){
             //set icon only
             //mTablayout.getTabAt(i).setIcon(R.drawable.tab_icon1);
             //set custom view
