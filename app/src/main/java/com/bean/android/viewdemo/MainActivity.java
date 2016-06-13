@@ -1,7 +1,10 @@
 package com.bean.android.viewdemo;
 
 import android.os.Bundle;
+import android.support.design.widget.CoordinatorLayout;
+import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
+import android.support.design.widget.Snackbar;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
@@ -17,11 +20,15 @@ public class MainActivity extends AppCompatActivity {
     private NavigationView mNavigationView;
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mDrawerToggle;
+    private CoordinatorLayout mCorLayout;
+    private FloatingActionButton mFab;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        mCorLayout=(CoordinatorLayout)findViewById(R.id.main_content);
 
         mToolbar=(Toolbar)findViewById(R.id.toolbar);
         setSupportActionBar(mToolbar);
@@ -31,10 +38,9 @@ public class MainActivity extends AppCompatActivity {
         mDrawerLayout=(DrawerLayout) findViewById(R.id.drawer_layout);
         mDrawerToggle=new ActionBarDrawerToggle(this, mDrawerLayout, mToolbar,
                 R.string.drawer_open_description, R.string.drawer_close_description){
-            View mainContent = (View)findViewById(R.id.main_content);
             @Override
             public void onDrawerSlide(View view, float offset){
-                mainContent.scrollTo(-(int)(mNavigationView.getWidth()*offset), 0);
+                mCorLayout.scrollTo(-(int)(mNavigationView.getWidth()*offset), 0);
                 super.onDrawerSlide(view, offset);
             }
         };
@@ -50,6 +56,21 @@ public class MainActivity extends AppCompatActivity {
                         return true;
                     }
                 });
+
+        mFab=(FloatingActionButton)findViewById(R.id.fab);
+        mFab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Snackbar.make(mCorLayout,R.string.app_name,Snackbar.LENGTH_LONG)
+                        .setAction(R.string.ok, new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                //TODO:add an action here
+                            }
+                        })
+                        .show();
+            }
+        });
 
         switchNavigation(R.id.navigation_item_view);
     }
