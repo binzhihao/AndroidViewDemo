@@ -5,7 +5,6 @@ import android.support.annotation.Nullable;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -29,7 +28,7 @@ public class ViewFragment extends Fragment{
         MyFragmentPagerAdapter adapter = new MyFragmentPagerAdapter(getChildFragmentManager(),inflater);
         adapter.addFragment(new TextViewFragment(), getString(R.string.fragment_1),R.drawable.tab_icon);
         adapter.addFragment(new EditTextFragment(), getString(R.string.fragment_2),R.drawable.tab_icon);
-        adapter.addFragment(new ViewGroupFragment(),getString(R.string.fragment_3),R.drawable.tab_icon);
+        adapter.addFragment(new BannerFragment(),getString(R.string.fragment_3),R.drawable.tab_icon);
         mViewPager.setAdapter(adapter);
         mViewPager.setOffscreenPageLimit(3);
         mTablayout.setupWithViewPager(mViewPager);  // 将两者关联起来，必须在setAdapter之后调用

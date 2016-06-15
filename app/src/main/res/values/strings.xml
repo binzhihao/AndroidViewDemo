@@ -6,6 +6,6 @@
     <string name="drawer_close_description">close</string>
     <string name="fragment_1">TextView</string>
     <string name="fragment_2">EditText</string>
-    <string name="fragment_3">ViewGroup</string>
+    <string name="fragment_3">Banner</string>
     <string name="ok">got</string>
 </resources>
