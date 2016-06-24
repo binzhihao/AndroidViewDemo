@@ -17,8 +17,7 @@ public class BannerFragment extends Fragment{
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view=inflater.inflate(R.layout.fragment_banner,null);
-        Banner banner1=(Banner)view.findViewById(R.id.banner);
-        Banner banner2=(Banner)view.findViewById(R.id.banner2);
+        Banner banner=(Banner)view.findViewById(R.id.banner);
 
         String[] images= new String[] {
                 "http://img.zcool.cn/community/01ae5656e1427f6ac72531cb72bac5.jpg",
@@ -28,14 +27,13 @@ public class BannerFragment extends Fragment{
                 "http://img.zcool.cn/community/01fda356640b706ac725b2c8b99b08.jpg"};
         Integer[] localImages={R.drawable.test0,R.drawable.test1,R.drawable.test2};
 
-        banner1.setImages(images);
-        banner1.setOnBannerClickListener(new Banner.OnBannerClickListener() {
+        banner.setImages(localImages);
+        banner.setOnBannerClickListener(new Banner.OnBannerClickListener() {
             @Override
             public void OnBannerClick(View view, int position) {
                 if(Constant.DEBUG) Log.e("fuck",""+position);
             }
         });
-        banner2.setImages(localImages);
 
         return view;
     }

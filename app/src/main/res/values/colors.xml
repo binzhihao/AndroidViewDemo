@@ -3,7 +3,13 @@
     <color name="colorPrimary">#2196f3</color>
     <color name="colorPrimaryDark">#1e88e5</color>
     <color name="colorAccent">#42a5f5</color>
+
     <color name="colorWhite">#ffffff</color>
     <color name="colorRed">#f44336</color>
-    <color name="colorGray">#767676</color>
+    <color name="colorGray">#757575</color>
+    <color name="colorDark">#303030</color>
+
+    <color name="colorDayNightWhite">@color/colorWhite</color>
+    <color name="colorDayNightGray">@color/colorGray</color>
+    <color name="colorDayNightDark">@color/colorDark</color>
 </resources>

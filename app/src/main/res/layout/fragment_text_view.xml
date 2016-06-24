@@ -10,19 +10,13 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.bean.android.viewdemo.MainActivity">
 
-    <TextView
-        android:id="@+id/title"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="counter_view"/>
     <com.bean.android.counterview.CounterView
         android:id="@+id/text0"
-        android:layout_below="@id/title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center|right"
         android:textSize="30sp"
-        android:textColor="#ff000000"
+        android:textColor="#000000"
         app:startValue="0"
         app:endValue="100"/>
     <TextView
@@ -41,7 +35,7 @@
         android:layout_height="wrap_content"
         android:gravity="center|right"
         android:textSize="50sp"
-        android:textColor="#ff000000"
+        android:textColor="#000000"
         app:startValue="0"
         app:timeInterval="500"
         app:increment="1"
@@ -62,7 +56,7 @@
         android:layout_height="wrap_content"
         android:gravity="center|right"
         android:textSize="50sp"
-        android:textColor="#ff000000"
+        android:textColor="#000000"
         app:startValue="0"
         app:timeInterval="500"
         app:increment="1"

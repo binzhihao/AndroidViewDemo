@@ -3,12 +3,12 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/navigation_item_view"
-            android:icon="@drawable/mgh"
+            android:icon="@drawable/ic_brightness"
             android:checked="true"
             android:title="@string/navigation_view" />
         <item
             android:id="@+id/navigation_item_animation"
-            android:icon="@drawable/mgh"
+            android:icon="@drawable/ic_settings"
             android:title="@string/navigation_animation" />
     </group>
 </menu>

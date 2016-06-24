@@ -11,10 +11,6 @@
     android:focusable="true"
     android:focusableInTouchMode="true"><!--do not let the EditText get focus when start-->
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="pwedit"/>
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
