@@ -3,9 +3,15 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AndroidViewDemo.iml" filepath="$PROJECT_DIR$/AndroidViewDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AndroidViewDemo.iml" filepath="$PROJECT_DIR$/AndroidViewDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/banner/banner.iml" filepath="$PROJECT_DIR$/banner/banner.iml" />
+      <module fileurl="file://$PROJECT_DIR$/banner/banner.iml" filepath="$PROJECT_DIR$/banner/banner.iml" />
       <module fileurl="file://$PROJECT_DIR$/counter_view/counter_view.iml" filepath="$PROJECT_DIR$/counter_view/counter_view.iml" />
+      <module fileurl="file://$PROJECT_DIR$/counter_view/counter_view.iml" filepath="$PROJECT_DIR$/counter_view/counter_view.iml" />
+      <module fileurl="file://$PROJECT_DIR$/custom_view/custom_view.iml" filepath="$PROJECT_DIR$/custom_view/custom_view.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pwedit/pwedit.iml" filepath="$PROJECT_DIR$/pwedit/pwedit.iml" />
       <module fileurl="file://$PROJECT_DIR$/pwedit/pwedit.iml" filepath="$PROJECT_DIR$/pwedit/pwedit.iml" />
     </modules>
   </component>

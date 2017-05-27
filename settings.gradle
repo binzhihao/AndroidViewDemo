@@ -1,1 +1,1 @@
-include ':app', ':counter_view', ':pwedit', ':banner'
+include ':app', ':counter_view', ':pwedit', ':banner', ':custom_view'

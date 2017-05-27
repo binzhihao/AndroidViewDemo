@@ -4,6 +4,7 @@
     <string name="navigation_animation">Animation</string>
     <string name="drawer_open_description">open</string>
     <string name="drawer_close_description">close</string>
+    <string name="fragment_0">Custom</string>
     <string name="fragment_1">TextView</string>
     <string name="fragment_2">EditText</string>
     <string name="fragment_3">Banner</string>

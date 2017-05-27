@@ -26,6 +26,7 @@ public class ViewFragment extends Fragment{
         mViewPager = (ViewPager) view.findViewById(R.id.viewpager);
 
         MyFragmentPagerAdapter adapter = new MyFragmentPagerAdapter(getChildFragmentManager(),inflater);
+        adapter.addFragment(new CustomViewFragment(), getString(R.string.fragment_0), R.drawable.tab_icon);
         adapter.addFragment(new TextViewFragment(), getString(R.string.fragment_1),R.drawable.tab_icon);
         adapter.addFragment(new EditTextFragment(), getString(R.string.fragment_2),R.drawable.tab_icon);
         adapter.addFragment(new BannerFragment(),getString(R.string.fragment_3),R.drawable.tab_icon);
